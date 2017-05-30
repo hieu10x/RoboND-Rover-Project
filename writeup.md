@@ -47,25 +47,30 @@ You're reading it!
 To run the perspective transformation on my dataset, I calibrate the transformation parameters using `../calibration_images/my_grid.jpg` taken in training mode with grid on. I need to do this because the camera perspective in my settings may be different to the one used in the example.
 
 My Roversim settings:
-Screen resolution: 1680 x 1050
-Windowed: Yes
-Graphics quality: Fantastic
+- Screen resolution: 1680 x 1050
+- Windowed: Yes
+- Graphics quality: Fantastic
 
 Example images:
+
 ![Example images][image1]
 
 My data images:
+
 ![My data images][image2]
 
 Warped images:
+
 ![Example warped image][image3]
 ![My data warped image][image4]
 
 The `color_thresh()` function has been modified to accept both lower and upper thresholds. This is useful to detect obstacles as well as navigable terrain.
+
 ![Example color_thresh image][image5]
 ![My data color_thresh image][image6]
 
 To detect golden rocks, HSV (hue, saturation, and value) color space is used. Color detection in this color space is robust to the lighting condition. See `hsv_thresh()` function.
+
 ![Example hsv_thresh image][image7]
 ![My data hsv_thresh image][image8]
 
@@ -105,12 +110,10 @@ Changes in `decision_step()` function:
 
 **Note: running the simulator with different choices of resolution and graphics quality may produce different results, particularly on different machines!  Make a note of your simulator settings (resolution and graphics quality set on launch) and frames per second (FPS output to terminal by `drive_rover.py`) in your writeup when you submit the project so your reviewer can reproduce your results.**
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.
-
-Screen resolution: 1680 x 1050
-Windowed: Yes
-Graphics quality: Fantastic
-FPS (average): 11
+- Screen resolution: 1680 x 1050
+- Windowed: Yes
+- Graphics quality: Fantastic
+- FPS (average): 11
 
 I did not use maps to plan navigation for the robot. This is where I would do if I were going to persue this further. Furthermore, the robot does not collect the samples for now.
 
