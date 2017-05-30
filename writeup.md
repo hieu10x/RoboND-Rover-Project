@@ -75,15 +75,14 @@ To detect golden rocks, HSV (hue, saturation, and value) color space is used. Co
 ![My data hsv_thresh image][image8]
 
 #### 2. Populate the `process_image()` function with the appropriate analysis steps to map pixels identifying navigable terrain, obstacles and rock samples into a worldmap.  Run `process_image()` on your test data using the `moviepy` functions provided to create video output of your result.
-And another!
 
 After filling the steps in `process_image()` function with the implemented functions, the below video is produced from my dataset:
 
-![My Video 1](./output/my_mapping1.mp4)
+[My Video 1](https://github.com/hieu10x/RoboND-Rover-Project/blob/master/output/my_mapping1.mp4)
 
 Another video from another dataset:
 
-![My Video 2](./output/my_mapping2.mp4)
+[My Video 2](https://github.com/hieu10x/RoboND-Rover-Project/blob/master/output/my_mapping2.mp4)
 
 ### Autonomous Navigation and Mapping
 
